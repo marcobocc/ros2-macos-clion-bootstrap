@@ -1,0 +1,18 @@
+version: '2'
+services:
+  build_packages:
+    build:
+      dockerfile: Dockerfile
+    image: ros:jazzy-custom
+    volumes:
+      - .:/workspace
+    working_dir: /workspace
+    command: >
+      bash -c "
+        source /opt/ros/jazzy/setup.bash &&
+        cd /workspace &&
+        colcon build &&
+        source install/setup.sh &&
+        chmod +x print_environment.sh &&
+        ./print_environment.sh
+      "
