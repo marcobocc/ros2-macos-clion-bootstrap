@@ -23,7 +23,7 @@ If you have successfully build the Docker image in Step 1, most of the fields in
 
 ![toolchain_setup_image](documentation/toolchain_setup.png)
 
-Once the toolchain is set up, you need to configure the environment of CMake. Go to **Settings -> Build, Execution, Deployment -> Toolchains**.
+Once the toolchain is set up, you need to configure the environment of CMake. Go to **Settings -> Build, Execution, Deployment -> CMake**.
 In the "Environment" field, paste the string obtained in Step 1.
 
 ![cmake_setup_image](documentation/cmake_setup.png)
